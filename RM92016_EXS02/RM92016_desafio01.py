@@ -13,24 +13,24 @@
 
 soma = 0
 print('VOCÊ ESTÁ DIGITANDO AS NOTAS DOS ALUNOS IMPARES')
-for impar in range(1,26,2):
+for impar in range(1,50,2):
     alunosImpar = float(input(f'Digite nota do aluno {impar}º:'))
     soma = soma + 1
-    mediaImpar = soma + alunosImpar / 13
+    mediaImpar = soma + alunosImpar / 25
 
-print(f'A MEDIA DA SALA IMPAR É :{mediaImpar:.1f}')
+print(f'A MÉDIA DA SALA IMPAR É :{mediaImpar:.1f}')
 
 print('_'*40)
 print('VOCÊ ESTÁ DIGITANDO AS NOTAS DOS ALUNOS PARES')
 
-for impar in range(2,25,2):
-    alunosPar = float(input(f'Digite nota do aluno {impar}º:'))
+for par in range(2,51,2):
+    alunosPar = float(input(f'Digite nota do aluno {par}º:'))
     soma = soma + 1
-    mediaPar = soma + alunosPar / 12
+    mediaPar = soma + alunosPar / 25
 
-print(f'A MEDIA DA SALA PAR É :{mediaPar:.1f}')
+print(f'A MÉDIA DA SALA PAR É :{mediaPar:.1f}')
 
 if mediaImpar > mediaPar:
-    print('A sala com maior media eh IMPAR')
+    print('A sala com maior média é a sala  IMPAR')
 else:
-    print('A sala com maior media eh PAR')
+    print('A sala com maior média é a sala  PAR')
